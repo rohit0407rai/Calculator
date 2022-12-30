@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/appleblack">
+
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="match_parent"
+          android:layout_height="200dp"
+          android:layout_alignParentLeft="true"
+          android:gravity="end"
+
+          android:textSize="40dp" />
+      <TextView
+          android:id="@+id/textView2"
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:layout_alignParentLeft="true"
+          android:gravity="end"
+          android:layout_below="@+id/textView1"
+
+          android:textSize="40dp" />
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_alignParentBottom="true"
+          android:id="@+id/layout1">
+
+         <ImageButton
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:layout_gravity="left"
+             android:background="@drawable/darkgrey"
+             android:padding="10dp"
+             android:id="@+id/btn_zero"
+             android:src="@drawable/zero"
+             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+         <ImageButton
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:id="@+id/btn_dot"
+             android:background="@drawable/darkgrey"
+             android:padding="10dp"
+
+             android:src="@drawable/dot"
+
+             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+         <ImageButton
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:id="@+id/btn_singl"
+             android:background="@drawable/darkgrey"
+             android:padding="10dp"
+
+             android:src="@drawable/singl"
+
+             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+         <ImageButton
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:id="@+id/btn_equal"
+             android:background="@drawable/orange"
+             android:padding="10dp"
+
+             android:src="@drawable/equal"
+
+             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:id="@+id/layout2"
+         android:layout_above="@+id/layout1"
+          android:orientation="horizontal" >
+
+      <ImageButton
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:layout_gravity="left"
+          android:background="@drawable/darkgrey"
+          android:padding="10dp"
+          android:id="@+id/btn_one"
+          android:src="@drawable/one"
+          tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+      <ImageButton
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:id="@+id/btn_two"
+          android:background="@drawable/darkgrey"
+          android:padding="10dp"
+
+          android:src="@drawable/two"
+
+          tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+      <ImageButton
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:id="@+id/btn_three"
+          android:background="@drawable/darkgrey"
+          android:padding="10dp"
+
+          android:src="@drawable/three"
+
+          tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+      <ImageButton
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:id="@+id/btn_plus"
+          android:background="@drawable/greybg"
+          android:padding="10dp"
+
+          android:src="@drawable/plus"
+
+          tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/layout3"
+          android:layout_above="@+id/layout2"
+          android:orientation="horizontal" >
+
+         <ImageButton
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:layout_gravity="left"
+             android:background="@drawable/darkgrey"
+             android:padding="10dp"
+             android:id="@+id/btn_four"
+             android:src="@drawable/four"
+             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+         <ImageButton
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:id="@+id/btn_five"
+             android:background="@drawable/darkgrey"
+             android:padding="10dp"
+
+             android:src="@drawable/five"
+
+             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+         <ImageButton
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:id="@+id/btn_six"
+             android:background="@drawable/darkgrey"
+             android:padding="10dp"
+
+             android:src="@drawable/six"
+
+             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+         <ImageButton
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:id="@+id/btn_minus"
+             android:background="@drawable/greybg"
+             android:padding="10dp"
+
+             android:src="@drawable/minus"
+
+             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/layout4"
+          android:layout_above="@+id/layout3"
+          android:orientation="horizontal" >
+
+         <ImageButton
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:layout_gravity="left"
+             android:background="@drawable/darkgrey"
+             android:padding="10dp"
+             android:id="@+id/btn_seven"
+             android:src="@drawable/seven"
+             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+         <ImageButton
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:id="@+id/btn_eight"
+             android:background="@drawable/darkgrey"
+             android:padding="10dp"
+
+             android:src="@drawable/eight"
+
+             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+         <ImageButton
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:id="@+id/btn_nine"
+             android:background="@drawable/darkgrey"
+             android:padding="10dp"
+
+             android:src="@drawable/nine"
+
+             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+         <ImageButton
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:id="@+id/btn_multiply"
+             android:background="@drawable/greybg"
+             android:padding="10dp"
+
+             android:src="@drawable/multiply"
+
+             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/layout5"
+          android:layout_above="@+id/layout4"
+          android:orientation="horizontal" >
+
+         <ImageButton
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:id="@+id/btn_percentage"
+             android:background="@drawable/darkgrey"
+             android:padding="10dp"
+
+             android:src="@drawable/percentage"
+
+             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+         <ImageButton
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:id="@+id/btn_backspace"
+             android:background="@drawable/darkgrey"
+             android:padding="10dp"
+
+             android:src="@drawable/backspace2"
+
+             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+         <ImageButton
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:id="@+id/btn_divide"
+             android:background="@drawable/greybg"
+             android:padding="10dp"
+
+             android:src="@drawable/divide"
+
+             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+      </LinearLayout>
+
+
+   </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
